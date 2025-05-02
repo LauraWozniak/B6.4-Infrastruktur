@@ -1,4 +1,3 @@
-yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: CloudFormation Template to launch a t2.micro EC2 instance with specific AMI and Security Group
 
