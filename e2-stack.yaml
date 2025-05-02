@@ -1,28 +1,14 @@
-AWSTemplateFormatVersion: '2010-09-09'
-Description: CloudFormation Template to launch a t2.micro EC2 instance with specific AMI and Security Group
-
-Parameters:
-  AmiId:
-    Description: "The AMI ID for the EC2 instance"
-    Type: String
-
-  SecurityGroupId:
-    Description: "The Security Group ID for the EC2 instance"
-    Type: String
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "Erstellt eine EC2 t2.micro Instanz mit spezifischer AMI und Security Group"
 
 Resources:
   MyEC2Instance:
-    Type: 'AWS::EC2::Instance'
+    Type: "AWS::EC2::Instance"
     Properties:
-      InstanceType: t2.micro
-      ImageId: ami-02d2a6bc43729df3e
+      InstanceType: "t2.micro"
+      ImageId: "ami-0793ace9dd5de0095"
       SecurityGroupIds:
-        - sg-0be14659a6379fe7a
+        - "sg-050596cc34e89dc28"
       Tags:
         - Key: Name
-          Value: MyEC2Instance
-
-Outputs:
-  InstanceId:
-    Description: "The Instance ID of the EC2 instance"
-    Value: i-0fd9bd71fea678a8a
+          Value: MyEC2Instanceilie
